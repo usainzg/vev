@@ -1,0 +1,6 @@
+* Pervertex: Mal calculado especular factor (revisar para el resto de shaders) -> OK
+* Atenuación de la luz posicional: revisarlo -> OK
+* Perfragment: no normalizar, revisar (viewDirection) -> OK
+* Frustum culling: mal -> OK
+* Bump-mapping, revisarlo -> OK
+* Hacer una revisión general de todos los shaders comenzando con pervertex. -> OK

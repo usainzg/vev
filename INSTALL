@@ -1,0 +1,46 @@
+
+1) You need the following packages for installing this sw:
+
+- freeglut3-dev
+- libglew-dev
+
+the following command would do in on an Ubuntu system:
+
+% sudo apt-get install libtool freeglut3-dev libglew-dev
+
+2) build the project
+
+There are two main alternatives:
+
+2.1 Using CMAKE
+
+If you use CMAKE, run this *only once*
+
+% cmake CMakeLists.txt
+
+Then, build tha project with:
+
+% make
+
+2.2 Using makefile
+
+2.2.1) clean the project
+
+% make -f makefile.orij distclean
+% make -f makefile.orij clean
+
+2.2.2) build the project
+
+% make -f makefile.orij
+
+3) run the project:
+
+% ./browser
+
+4) Sometimes you have to uncomment this line in Browser/browser.c (around line
+   446):
+
+  // Uncomment following line if you have problems initiating GLEW
+  //
+-  // glewExperimental = GL_TRUE;
++  glewExperimental = GL_TRUE;
